@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Home Service Dispatch | Plumbing, HVAC & Electrical</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --border: #cbd5e1;
+      --accent: #0f172a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; }
+    header { background: var(--accent); color: #fff; padding: 48px 20px; text-align: center; }
+    header p { max-width: 640px; margin: 12px auto 0; color: #cbd5e1; }
+    .container { max-width: 960px; margin: 0 auto; padding: 36px 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 22px; display: flex; flex-direction: column; justify-content: space-between; }
+    .card h2 { font-size: 1.25rem; margin-bottom: 8px; }
+    .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 18px; }
+    .btn { display: inline-block; text-decoration: none; background: var(--ink); color: #fff; padding: 10px 16px; border-radius: 6px; font-weight: 600; text-align: center; }
+    footer { max-width: 960px; margin: 20px auto 40px; padding: 0 20px; font-size: 0.85rem; color: var(--muted); }
+    footer a { color: var(--ink); margin-right: 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>US Home Service Dispatch Directory</h1>
+    <p>Select a service category below to view local dispatch options and support details.</p>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <article class="card">
+        <div>
+          <h2>Plumbing Services</h2>
+          <p>Leak repairs, drain clearing, burst pipes, and water heater service across supported areas.</p>
+        </div>
+        <a class="btn" href="./plumbing.html">Open Plumbing Page</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <h2>HVAC Services</h2>
+          <p>Air conditioning repair, furnace troubleshooting, seasonal tune-ups, and system checks.</p>
+        </div>
+        <a class="btn" href="./hvac.html">Open HVAC Page</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <h2>Electrical Services</h2>
+          <p>Circuit breakers, panel checks, faulty outlets, lighting issues, and safety guidance.</p>
+        </div>
+        <a class="btn" href="./electrical.html">Open Electrical Page</a>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <a href="./privacy.html">Privacy Policy</a>
+    <a href="./terms.html">Terms of Service</a>
+    <span>Independent service routing and call connection support.</span>
+  </footer>
+</body>
+</html>
