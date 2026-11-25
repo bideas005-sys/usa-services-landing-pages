@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AC & Heating Repair Dispatch | Local HVAC Help</title>
+  <style>
+    :root {
+      --bg: #faf7f5;
+      --surface: #ffffff;
+      --slate: #1f2937;
+      --accent: #c2410c;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .topbar { background: var(--slate); color: #fff; padding: 10px 20px; font-size: 0.9rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .hero { background: linear-gradient(120deg, var(--slate), var(--accent)); color: #fff; padding: 56px 20px; text-align: center; }
+    .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); max-width: 780px; margin: 0 auto 14px; }
+    .hero p { max-width: 650px; margin: 0 auto 24px; color: #ffedd5; }
+    .cta-btn { display: inline-block; background: #fff; color: var(--accent); font-weight: 700; text-decoration: none; padding: 14px 28px; border-radius: 6px; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 20px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-top: 4px solid var(--accent); border-radius: 8px; padding: 22px; }
+    .card h3 { margin-bottom: 8px; }
+    .faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 18px; margin-bottom: 12px; }
+    footer { background: var(--slate); color: #e5e7eb; padding: 28px 20px; font-size: 0.85rem; margin-top: 40px; }
+    footer a { color: #fdba74; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <span>Year-Round Heating & Cooling Connections</span>
+    <span>Direct Line: <strong>[RINGBA_NUMBER]</strong></span>
+  </div>
+
+  <header class="hero">
+    <h1>AC Not Cooling or Furnace Out? Get Local HVAC Help Fast</h1>
+    <p>Reach available heating and air conditioning service providers for diagnostics, seasonal tune-ups, airflow issues, and system replacements.</p>
+    <a class="cta-btn" href="tel:[RINGBA_NUMBER]">Speak With Dispatch: [RINGBA_NUMBER]</a>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Heating & Cooling Coverage</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Air Conditioning Repair</h3>
+          <p>Support for warm air blowing from vents, refrigerant concerns, frozen coils, capacitor faults, and noisy outdoor units.</p>
+        </div>
+        <div class="card">
+          <h3>Furnace & Heat Pump Service</h3>
+          <p>Troubleshooting ignition problems, uneven room temperatures, heat pump switchovers, and winter heating breakdowns.</p>
+        </div>
+        <div class="card">
+          <h3>Tune-Ups & System Quotes</h3>
+          <p>Preventive maintenance checks and replacement estimates when older heating or cooling equipment nears the end of its lifespan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top: 40px;">
+      <h2>What to Have Ready When You Call</h2>
+      <div class="grid">
+        <div class="card"><h3>Your ZIP Code</h3><p>Helps match your request with providers covering your neighborhood.</p></div>
+        <div class="card"><h3>System Symptoms</h3><p>Note whether the unit runs, clicks, short-cycles, or lacks airflow.</p></div>
+        <div class="card"><h3>Preferred Time</h3><p>Let the coordinator know if you need same-day help or scheduled service.</p></div>
+      </div>
+    </section>
+
+    <section style="margin-top: 40px;">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <strong>Do you service both central air and furnaces?</strong>
+        <p>Yes, participating HVAC providers handle cooling and heating systems depending on active campaign availability.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Can I schedule routine maintenance instead of emergency repair?</strong>
+        <p>Yes. Call to check seasonal inspection and tune-up options in your area.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div style="max-width: 1000px; margin: 0 auto;">
+      <p><strong>Disclosure:</strong> We connect callers with third-party HVAC service providers and partners; we are not directly performing on-site repairs. See our <a href="/privacy.html">Privacy Policy</a> and <a href="/terms.html">Terms</a> for details.</p>
+    </div>
+  </footer>
+</body>
+</html>
