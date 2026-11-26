@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://www.googletagmanager.com/gtm.js?id=G-3SEHEPT8S9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3SEHEPT8S9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3SEHEPT8S9');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Local Home Service Dispatch | Plumbing, HVAC & Electrical</title>
+  <title>USA Home Services Dispatches | Plumbing, HVAC, Electrical &amp; Roofing</title>
+  <meta name="description" content="USA Home Services Dispatches connects homeowners across the United States with independent local plumbing, HVAC, electrical, and roofing service providers." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://usa-services-landing-pages.vercel.app/" />
   <style>
     :root {
       --bg: #f8fafc;
@@ -18,59 +23,196 @@
       --muted: #475569;
       --border: #cbd5e1;
       --accent: #0f172a;
+      --accent-hover: #1e293b;
+      --badge-bg: #e2e8f0;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; }
-    header { background: var(--accent); color: #fff; padding: 48px 20px; text-align: center; }
-    header p { max-width: 640px; margin: 12px auto 0; color: #cbd5e1; }
-    .container { max-width: 960px; margin: 0 auto; padding: 36px 20px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 22px; display: flex; flex-direction: column; justify-content: space-between; }
-    .card h2 { font-size: 1.25rem; margin-bottom: 8px; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.65; }
+    .topbar { background: #020617; color: #cbd5e1; padding: 10px 20px; font-size: 0.88rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .topbar strong { color: #ffffff; }
+    nav.nav-bar { background: #1e293b; padding: 10px 20px; display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; font-size: 0.92rem; }
+    nav.nav-bar a { color: #f8fafc; text-decoration: none; }
+    nav.nav-bar a:hover { text-decoration: underline; }
+    header { background: var(--accent); color: #fff; padding: 56px 20px; text-align: center; }
+    .hero-badge { display: inline-block; background: rgba(255, 255, 255, 0.12); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.25); padding: 4px 12px; border-radius: 999px; font-size: 0.82rem; font-weight: 600; margin-bottom: 14px; }
+    header h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); max-width: 780px; margin: 0 auto 12px; line-height: 1.2; }
+    header p { max-width: 660px; margin: 0 auto; color: #cbd5e1; font-size: 1.05rem; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 44px 20px; }
+    h2 { font-size: 1.55rem; margin-bottom: 12px; color: var(--ink); }
+    .section-intro { color: var(--muted); margin-bottom: 22px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; }
+    .card h3 { font-size: 1.2rem; margin-bottom: 8px; color: var(--ink); }
     .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 18px; }
-    .btn { display: inline-block; text-decoration: none; background: var(--ink); color: #fff; padding: 10px 16px; border-radius: 6px; font-weight: 600; text-align: center; }
-    footer { max-width: 960px; margin: 20px auto 40px; padding: 0 20px; font-size: 0.85rem; color: var(--muted); }
-    footer a { color: var(--ink); margin-right: 12px; }
+    .btn { display: inline-block; text-decoration: none; background: var(--ink); color: #fff; padding: 11px 16px; border-radius: 6px; font-weight: 600; text-align: center; transition: background 0.2s; }
+    .btn:hover { background: var(--accent-hover); }
+    .step-badge { display: inline-block; background: var(--badge-bg); color: var(--ink); font-weight: 700; font-size: 0.8rem; padding: 3px 10px; border-radius: 4px; margin-bottom: 10px; width: fit-content; }
+    .faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 18px; margin-bottom: 12px; }
+    .faq-item strong { display: block; margin-bottom: 6px; color: var(--ink); }
+    .faq-item p { color: var(--muted); font-size: 0.95rem; }
+    footer { background: var(--accent); color: #cbd5e1; padding: 34px 20px; font-size: 0.85rem; margin-top: 40px; }
+    footer a { color: #ffffff; margin-right: 14px; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
   </style>
+
+  <!-- Organization + WebSite + FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "USA Home Services Dispatches",
+        "url": "https://usa-services-landing-pages.vercel.app/",
+        "email": "bideas005@gmail.com",
+        "description": "Consumer referral and call-routing directory connecting U.S. homeowners with independent residential plumbing, HVAC, electrical, and roofing service providers."
+      },
+      {
+        "@type": "WebSite",
+        "name": "USA Home Services Dispatches",
+        "url": "https://usa-services-landing-pages.vercel.app/"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does USA Home Services Dispatches work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Select your residential service category, review common issue coverage and cost ranges, and call the listed dispatch line during active service hours to be routed to an available local service provider."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does USA Home Services Dispatches perform repairs directly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. USA Home Services Dispatches is a free consumer referral and call-connection directory. All inspections, estimates, and repair services are performed by independent third-party providers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a fee to call a dispatch number on this site?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Connecting through our listed dispatch numbers is free for homeowners. Standard carrier call rates apply, and any service or diagnostic fees are quoted directly by the responding contractor."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <div class="topbar">
+    <span><strong>USA Home Services Dispatches</strong> &mdash; Residential Service Directory</span>
+    <span>U.S. Homeowner Call-Connection Support</span>
+  </div>
+
+  <nav class="nav-bar" aria-label="Primary Navigation">
+    <a href="./index.html"><strong>Home</strong></a>
+    <a href="./plumbing.html">Plumbing</a>
+    <a href="./hvac.html">HVAC</a>
+    <a href="./electrical.html">Electrical</a>
+    <a href="./privacy.html">Privacy Policy</a>
+    <a href="./terms.html">Terms</a>
+  </nav>
+
   <header>
-    <h1>US Home Service Dispatch Directory</h1>
-    <p>Select a service category below to view local dispatch options and support details.</p>
+    <span class="hero-badge">Residential Repair &amp; Service Routing</span>
+    <h1>USA Home Services Dispatches</h1>
+    <p>Choose a home service category below to review common repair issues, typical U.S. cost guides, and direct call-connection options for your area.</p>
   </header>
 
   <main class="container">
-    <div class="grid">
-      <article class="card">
-        <div>
-          <h2>Plumbing Services</h2>
-          <p>Leak repairs, drain clearing, burst pipes, and water heater service across supported areas.</p>
-        </div>
-        <a class="btn" href="./plumbing.html">Open Plumbing Page</a>
-      </article>
+    <section>
+      <h2>Browse Home Service Categories</h2>
+      <p class="section-intro">Select the trade that matches your residential repair or installation request:</p>
+      <div class="grid">
+        <article class="card">
+          <div>
+            <h3>Plumbing Services</h3>
+            <p>Burst pipe repairs, slab and fixture leaks, clogged drains, sewer backups, and tank or tankless water heater service across supported areas.</p>
+          </div>
+          <a class="btn" href="./plumbing.html">Open Plumbing Dispatch</a>
+        </article>
 
-      <article class="card">
-        <div>
-          <h2>HVAC Services</h2>
-          <p>Air conditioning repair, furnace troubleshooting, seasonal tune-ups, and system checks.</p>
-        </div>
-        <a class="btn" href="./hvac.html">Open HVAC Page</a>
-      </article>
+        <article class="card">
+          <div>
+            <h3>HVAC Services</h3>
+            <p>Central air conditioning repairs, gas and electric furnace troubleshooting, heat pump service, seasonal tune-ups, and replacement quotes.</p>
+          </div>
+          <a class="btn" href="./hvac.html">Open HVAC Dispatch</a>
+        </article>
 
-      <article class="card">
-        <div>
-          <h2>Electrical Services</h2>
-          <p>Circuit breakers, panel checks, faulty outlets, lighting issues, and safety guidance.</p>
+        <article class="card">
+          <div>
+            <h3>Electrical Services</h3>
+            <p>Tripping circuit breakers, main electrical panel upgrades, dead or GFCI outlets, lighting fixtures, and residential wiring safety checks.</p>
+          </div>
+          <a class="btn" href="./electrical.html">Open Electrical Dispatch</a>
+        </article>
+      </div>
+    </section>
+
+    <section style="margin-top: 48px;">
+      <h2>How Our Call-Connection Process Works</h2>
+      <div class="grid">
+        <div class="card">
+          <div>
+            <span class="step-badge">Step 1</span>
+            <h3>Choose Your Service Trade</h3>
+            <p>Open the dedicated page for plumbing, heating and cooling, or electrical repair to check common symptoms and safety notices.</p>
+          </div>
         </div>
-        <a class="btn" href="./electrical.html">Open Electrical Page</a>
-      </article>
-    </div>
+        <div class="card">
+          <div>
+            <span class="step-badge">Step 2</span>
+            <h3>Call During Active Windows</h3>
+            <p>Tap the listed dispatch phone number to route your call based on your ZIP code, service category, and live provider availability.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <span class="step-badge">Step 3</span>
+            <h3>Confirm Quote With Provider</h3>
+            <p>Speak directly with the responding service provider to confirm arrival timing, diagnostic fees, and repair pricing before work starts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top: 48px;">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <strong>How does USA Home Services Dispatches work?</strong>
+        <p>Select your residential service category, review common issue coverage and cost ranges, and call the listed dispatch line during active service hours to be routed to an available local service provider.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Does USA Home Services Dispatches perform repairs directly?</strong>
+        <p>No. USA Home Services Dispatches is a free consumer referral and call-connection directory. All inspections, estimates, and repair services are performed by independent third-party providers.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Is there a fee to call a dispatch number on this site?</strong>
+        <p>Connecting through our listed dispatch numbers is free for homeowners. Standard carrier call rates apply, and any service or diagnostic fees are quoted directly by the responding contractor.</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <a href="./privacy.html">Privacy Policy</a>
-    <a href="./terms.html">Terms of Service</a>
-    <span>Independent service routing and call connection support.</span>
+    <div style="max-width: 1000px; margin: 0 auto;">
+      <p style="margin-bottom: 12px;"><strong>Disclosure:</strong> USA Home Services Dispatches provides informational guides and call-connection routing to independent third-party service providers and call partners. We do not directly perform on-site repair or contractor work. Availability, licensing, and pricing depend on the responding provider.</p>
+      <div>
+        <a href="./index.html">Home</a>
+        <a href="./plumbing.html">Plumbing</a>
+        <a href="./hvac.html">HVAC</a>
+        <a href="./electrical.html">Electrical</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
