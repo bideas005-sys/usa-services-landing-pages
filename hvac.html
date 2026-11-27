@@ -34,12 +34,12 @@
     .nav-bar a { color: #f3f4f6; text-decoration: none; }
     .nav-bar a:hover { color: #fdba74; }
     .hero { background: linear-gradient(120deg, var(--slate), var(--accent)); color: #fff; padding: 56px 20px; text-align: center; }
-    .hero-badge { display: inline-block; background: rgba(255, 255, 255, 0.16); color: #ffedd5; border: 1px solid rgba(255, 255, 255, 0.3); padding: 4px 12px; border-radius: 999px; font-size: 0.82rem; font-weight: 600; margin-bottom: 14px; }
+    .hero-badge { display: inline-block; background: rgba(255, 255, 255, 0.16); color: #fff7ed; border: 1px solid rgba(255, 255, 255, 0.3); padding: 4px 12px; border-radius: 999px; font-size: 0.82rem; font-weight: 600; margin-bottom: 14px; }
     .hero h1 { font-size: clamp(1.85rem, 4vw, 2.85rem); max-width: 820px; margin: 0 auto 14px; line-height: 1.2; }
-    .hero p { max-width: 680px; margin: 0 auto 24px; color: #ffedd5; font-size: 1.05rem; }
+    .hero p { max-width: 680px; margin: 0 auto 24px; color: #fff7ed; font-size: 1.05rem; }
     .cta-btn { display: inline-block; background: #fff; color: var(--accent); font-weight: 800; font-size: 1.05rem; text-decoration: none; padding: 15px 30px; border-radius: 6px; transition: background 0.2s; }
     .cta-btn:hover { background: #ffedd5; }
-    .sub-cta { display: block; margin-top: 10px; font-size: 0.85rem; color: #fed7aa; }
+    .sub-cta { display: block; margin-top: 10px; font-size: 0.85rem; color: #ffedd5; }
     .container { max-width: 1000px; margin: 0 auto; padding: 44px 20px; }
     h2 { font-size: 1.55rem; margin-bottom: 14px; color: var(--slate); }
     .section-intro { color: var(--muted); margin-bottom: 20px; }
@@ -70,12 +70,26 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebPage",
+        "@id": "https://www.usaservicesdispatcher.site/hvac.html",
+        "url": "https://www.usaservicesdispatcher.site/hvac.html",
+        "name": "24/7 Local AC & Furnace Repair Dispatch | USA Home Services Dispatches",
+        "dateModified": "2026-11-27"
+      },
+      {
         "@type": "Service",
         "name": "Residential HVAC Repair & Dispatch Connection",
+        "description": "Connects homeowners across the United States with local HVAC technicians for air conditioning repair, furnace service, heat pumps, and system estimates.",
         "provider": {
           "@type": "Organization",
           "name": "USA Home Services Dispatches",
-          "url": "https://www.usaservicesdispatcher.site/"
+          "url": "https://www.usaservicesdispatcher.site/",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "[RINGBA_NUMBER]",
+            "contactType": "customer service",
+            "areaServed": "US"
+          }
         },
         "areaServed": {
           "@type": "Country",
@@ -135,8 +149,8 @@
     <a href="https://www.usaservicesdispatcher.site/plumbing.html">Plumbing</a>
     <a href="https://www.usaservicesdispatcher.site/hvac.html"><strong>HVAC</strong></a>
     <a href="https://www.usaservicesdispatcher.site/electrical.html">Electrical</a>
-    <a href="./privacy.html">Privacy Policy</a>
-    <a href="./terms.html">Terms</a>
+    <a href="https://www.usaservicesdispatcher.site/privacy.html">Privacy Policy</a>
+    <a href="https://www.usaservicesdispatcher.site/terms.html">Terms</a>
   </nav>
 
   <header class="hero">
