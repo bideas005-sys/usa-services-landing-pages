@@ -29,7 +29,8 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.65; }
     .topbar { background: #020617; color: #cbd5e1; padding: 10px 20px; font-size: 0.88rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
-    .topbar strong { color: #ffffff; }
+    .topbar strong, .topbar a { color: #ffffff; text-decoration: none; }
+    .topbar a:hover { text-decoration: underline; }
     nav.nav-bar { background: #1e293b; padding: 10px 20px; display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; font-size: 0.92rem; }
     nav.nav-bar a { color: #f8fafc; text-decoration: none; }
     nav.nav-bar a:hover { text-decoration: underline; }
@@ -37,6 +38,9 @@
     .hero-badge { display: inline-block; background: rgba(255, 255, 255, 0.12); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.25); padding: 4px 12px; border-radius: 999px; font-size: 0.82rem; font-weight: 600; margin-bottom: 14px; }
     header h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); max-width: 780px; margin: 0 auto 12px; line-height: 1.2; }
     header p { max-width: 660px; margin: 0 auto; color: #cbd5e1; font-size: 1.05rem; }
+    .hero-call { margin-top: 22px; }
+    .hero-call a { display: inline-block; background: #ffffff; color: var(--ink); padding: 12px 22px; border-radius: 6px; font-weight: 700; text-decoration: none; }
+    .hero-call a:hover { background: #e2e8f0; }
     .container { max-width: 1000px; margin: 0 auto; padding: 44px 20px; }
     h2 { font-size: 1.55rem; margin-bottom: 12px; color: var(--ink); }
     .section-intro { color: var(--muted); margin-bottom: 22px; }
@@ -64,6 +68,7 @@
         "@type": "Organization",
         "name": "USA Home Services Dispatches",
         "url": "https://www.usaservicesdispatcher.site/",
+        "telephone": "+923416206663",
         "email": "bideas005@gmail.com",
         "description": "Consumer referral and call-routing directory connecting U.S. homeowners with independent residential plumbing, HVAC, electrical, and roofing service providers."
       },
@@ -88,15 +93,15 @@
             "name": "Does USA Home Services Dispatches perform repairs directly?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. USA Home Services Dispatches is a free consumer referral and call-connection directory. All inspections, estimates, and repair services are performed by independent third-party providers."
+              "text": "No. USA Home Services Dispatches is a consumer referral and call-connection directory. All inspections, estimates, and repair services are performed by independent third-party providers."
             }
           },
           {
             "@type": "Question",
-            "name": "Is there a fee to call a dispatch number on this site?",
+            "name": "Is there a directory fee to call a dispatch number on this site?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Connecting through our listed dispatch numbers is free for homeowners. Standard carrier call rates apply, and any service or diagnostic fees are quoted directly by the responding contractor."
+              "text": "Connecting through our listed dispatch numbers is available for homeowners with no directory charge. Standard carrier call rates apply, and any service or diagnostic fees are quoted directly by the responding contractor."
             }
           }
         ]
@@ -108,7 +113,7 @@
 <body>
   <div class="topbar">
     <span><strong>USA Home Services Dispatches</strong> &mdash; Residential Service Directory</span>
-    <span>U.S. Homeowner Call-Connection Support</span>
+    <span>Support: <a href="tel:+923416206663">+92-341-620-6663</a> | <a href="mailto:bideas005@gmail.com">bideas005@gmail.com</a></span>
   </div>
 
   <nav class="nav-bar" aria-label="Primary Navigation">
@@ -124,6 +129,9 @@
     <span class="hero-badge">Residential Repair &amp; Service Routing</span>
     <h1>USA Home Services Dispatches</h1>
     <p>Choose a home service category below to review common repair issues, typical U.S. cost guides, and direct call-connection options for your area.</p>
+    <div class="hero-call">
+      <a href="tel:+923416206663">Call Dispatch Desk: +92-341-620-6663</a>
+    </div>
   </header>
 
   <main class="container">
@@ -171,7 +179,7 @@
           <div>
             <span class="step-badge">Step 2</span>
             <h3>Call During Active Windows</h3>
-            <p>Tap the listed dispatch phone number to route your call based on your ZIP code, service category, and live provider availability.</p>
+            <p>Tap the listed dispatch phone number (<a href="tel:+923416206663" style="color: var(--ink); font-weight: 600;">+92-341-620-6663</a>) to route your call based on your ZIP code, service category, and live provider availability.</p>
           </div>
         </div>
         <div class="card">
@@ -192,11 +200,11 @@
       </div>
       <div class="faq-item">
         <strong>Does USA Home Services Dispatches perform repairs directly?</strong>
-        <p>No. USA Home Services Dispatches is a free consumer referral and call-connection directory. All inspections, estimates, and repair services are performed by independent third-party providers.</p>
+        <p>No. USA Home Services Dispatches is a consumer referral and call-connection directory. All inspections, estimates, and repair services are performed by independent third-party providers.</p>
       </div>
       <div class="faq-item">
-        <strong>Is there a fee to call a dispatch number on this site?</strong>
-        <p>Connecting through our listed dispatch numbers is free for homeowners. Standard carrier call rates apply, and any service or diagnostic fees are quoted directly by the responding contractor.</p>
+        <strong>Is there a directory fee to call a dispatch number on this site?</strong>
+        <p>Connecting through our listed dispatch numbers is available for homeowners with no directory charge. Standard carrier call rates apply, and any service or diagnostic fees are quoted directly by the responding contractor.</p>
       </div>
     </section>
   </main>
@@ -204,6 +212,7 @@
   <footer>
     <div style="max-width: 1000px; margin: 0 auto;">
       <p style="margin-bottom: 12px;"><strong>Disclosure:</strong> USA Home Services Dispatches provides informational guides and call-connection routing to independent third-party service providers and call partners. We do not directly perform on-site repair or contractor work. Availability, licensing, and pricing depend on the responding provider.</p>
+      <p style="margin-bottom: 12px;"><strong>Contact:</strong> <a href="tel:+923416206663">+92-341-620-6663</a> | <a href="mailto:bideas005@gmail.com">bideas005@gmail.com</a></p>
       <div>
         <a href="https://www.usaservicesdispatcher.site/">Home</a>
         <a href="./plumbing.html">Plumbing</a>
